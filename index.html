@@ -1,70 +1,264 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=640" />
+    <title>zyxstar's Profile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <style type="text/css">
+        body {
+        }
 
-  <title>Zyxstar's Home</title>
-  <link rel="stylesheet" href="stylesheets/styles.css"/>
-  <script type="text/javascript" src="javascripts/Chart.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <!--[if lte IE 8]>
-  <script type="text/javascript" src="javascript/excanvas.js"></script>
-  <![endif]-->
+        .top {
+            padding-top: 40px;
+        }
+
+        h1 {
+        }
+
+        h2 a:hover {
+            text-decoration: none;
+            cursor: default;
+        }
+
+        dt {
+            margin-top: 20px;
+        }
+
+        dd {
+            color: #808080;
+        }
+    </style>
+
+
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <div class="redBorder"></div>
-  <div class="greenBorder"></div>
-  <div class="yellowBorder"></div>
 
-  <a href="https://github.com/zyxstar">View on GitHub</a>
+    <div class="container">
 
-  <h2>编程语言</h2>
-  <canvas id="proglang" width="400" height="400"></canvas>
-<script type="text/javascript">
-var data = [
-  {
-    value: 30,
-    color:"#F38630"
-  },
-  {
-    value : 50,
-    color : "#E0E4CC"
-  },
-  {
-    value : 100,
-    color : "#69D2E7"
-  }
-];
-var ctx = document.getElementById("proglang").getContext("2d");
-  new Chart(ctx).Pie(data);
-
-</script>
-<ul>
-  <li>C#</li>
-  <li>Python</li>
-  <li>Javascript</li>
-  <li>Ruby</li>
-</ul>
+        <div class="masthead">
+            <h3 class="muted">zyxstar's profile</h3>
+            <div class="navbar ">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <ul id="myNav" class="nav">
+                            <li class="active"><a href="#language">编程语言</a></li>
+                            <li><a href="#knowledge">编程技能</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#certificate">软考证书</a></li>
+                            <li><a href="#profile">关于本人</a></li>
+                            <li><a href="#contact">联系方式</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /.navbar -->
+        </div>
 
 
-  <hr/>
-  <ul>
-    <li>
-      <a href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">coffeescript on SAE</a>
-    </li>
-    <li>
-      <a href="http://zyx-star.appsp0t.com/app/chess.htm">chess on GAE</a>
-    </li>
-    <li>
-      <a href="http://zyx-star.appsp0t.com/app/chessxhr.htm">chessXhr(双人对弈) on GAE</a>
-    </li>
-    <li>
-      <a href="http://www.cnblogs.com/zyxstar2003">my blog</a>
-    </li>
-  </ul>
+
+
+        <div class="row">
+            <div class="span12">
+                <a name="language"></a>
+                <h2 class="top">
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="工作中主要工作语言">编程语言</a></h2>
+
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td style="width: 15%">语言</td>
+                            <td style="width: 25%">框架/库</td>
+                            <td style="width: 15%">熟练程度</td>
+                            <td style="width: 45%">说明</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>C#
+                            </td>
+                            <td>.Net Framework，Linq
+                            </td>
+                            <td>比较熟悉
+                            </td>
+                            <td>接触时间比较长，基本了解语言机制，对范型、委托、事件、反射也有所接触
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Python 2.x      
+                            </td>
+                            <td>Standard Library，webpy，moko，beaker，django
+                            </td>
+                            <td>比较熟悉
+                            </td>
+                            <td>基本了解语言机制，喜欢它的灵活，喜欢列表解析与生成器，常用它来编写一些工具：构建自动化测试、代码生成器、系统监控……
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Javascript    
+                            </td>
+                            <td>coffeescript，jquery，knockout
+                            </td>
+                            <td>比较熟悉
+                            </td>
+                            <td>基本了解语言机制，更喜欢coffeescript那种类ruby/python的风格，对knockout的MVVM也比较感兴趣
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Ruby    
+                            </td>
+                            <td>rails
+                            </td>
+                            <td>一般熟悉
+                            </td>
+                            <td>目前对它语言方面还有许多学习的地方，喜欢monkey patch，喜欢DSL，着迷于rails框架和丰富的插件
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="span12">
+                <a name="knowledge"></a>
+                <h2 class="top">
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="在工作或项目中积累的其它知识">编程技能</a></h2>
+
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab1">面向对象</a>
+                    </li>
+                    <li><a href="#tab2">单元测试</a></li>
+                    <li><a href="#tab3">数据库</a></li>
+                    <li><a href="#tab4">Web编程</a></li>
+
+                    <li><a href="#tab5">项目开发</a></li>
+
+                </ul>
+
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1">
+
+                        <p>对OOD、OOP有所了解，认为类的设计是CRC识别的过程；</p>
+                        <p>接触过设计模式，但认为Uncle Bob的OCP、DIP、LSP、SRP、ISP等更受用；</p>
+                        <p>喜欢POJO、POCO的编程风格，倾向从问题域进行建模。</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                        <p>曾专门参加过<a target="_blank" href="http://weibo.com/u/1859409827">段念</a>的敏捷测试的培训，对单元测试（分离与感知）有较好的理解，写出的代码能否具有可测性很重要；</p>
+                        <p>对C#、python下的xUnit框架及相应的mock框架有过实践；</p>
+                        <p>单元测试是持续集成必不可少的部分，但对测试驱动开发不甚了了。</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="tab3">
+                        <p>对数据库建模有过接触，能较好掌握实体与关系模型（E-R图）；</p>
+                        <p>接触过Oralce PL/SQL。</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab4">
+                        <p>接触过Asp.net、Webpy、Rails等框架下的web编程；</p>
+                        <p>了解Http协议；</p>
+                        <p>对html、css有所了解，熟悉常用框架；</p>
+                        <p>对restful编程风格与mvc框架也有所接触；</p>
+                        <p>同时对regex、xml/xsd等知识也有过实践。</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab5">
+                        <p>对项目开发流程有所实践，而常用工具如Bugfree、Svn/Git、CC.net/Ant对项目开发也很有裨益；</p>
+                        <p>对时间、成本、范围和质量的平衡有些感想，所以制作WBS，指定优先级，量化指标等是项目管理中可用的工具；</p>
+                        <p>但敏捷开发的思想让我意识到，人才是最重要的因素。</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="span12">
+                <a name="demo"></a>
+                <h2 class="top">
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="在GAE、SAE、Github上的小练手">Demo</a></h2>
+
+                <ul>
+
+                    <li>
+                        <a target="_blank" href="http://zyx-star.appsp0t.com/app/chess.htm">象棋(GAE)</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://zyx-star.appsp0t.com/app/chessxhr.htm">象棋对弈(GAE)</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://github.com/zyxstar">小项目(Github)</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">coffeescript(SAE)</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.cnblogs.com/zyxstar2003">技术博客</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="span12">
+
+                <a name="certificate"></a>
+                <h2 class="top">
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="参加全国软考所取得的证书">软考证书</a></h2>
+
+
+                <ul>
+                    <li>数据库系统工程师(2006) <a target="_blank" href="http://www.ceiaec.org/zgks_xw4.htm">进入全国前50名</a></li>
+                    <li>系统分析师(2009)</li>
+                    <li>信息系统项目管理师(2012)</li>
+                </ul>
+            </div>
+
+            <div class="span12">
+
+                <a name="profile"></a>
+                <h2 class="top">
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="关于本人">关于本人</a></h2>
+
+
+                <p></p>
+            </div>
+
+            <div class="span12">
+
+                <a name="contact"></a>
+                <h2 class="top">
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="联系方式">联系方式</a></h2>
+
+
+                <p>zyxstar2013#163.com</p>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        $("a[data-toggle='tooltip']").each(function () {
+            $(this).tooltip();
+        });
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+        var cur = $('#myNav li:first');
+        $('#myNav a').click(function (e) {
+            cur.removeClass("active");
+            cur = $(this).parent("li");
+            cur.addClass("active");
+        })
+    </script>
+
 
 </body>
 </html>
