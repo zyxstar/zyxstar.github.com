@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>zyxstar's Profile</title>
@@ -15,43 +15,100 @@
             padding-top: 40px;
         }
 
-        h1 {
+        .masthead h1 {
+            font-size:32px;
+            color:#e56920;
+            text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
         }
 
-        h2 a:hover {
+        h2 a {
+            color: #5a5a5a;
+        }
+
+            h2 a:hover {
+                text-decoration: none;
+                cursor: default;
+            }
+
+
+
+        a.external {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=) center right no-repeat;
+            padding-right: 13px;
+        }
+
+        #scrollUp0 {
+            bottom: 20px;
+            right: 20px;
+            height: 38px; /* Height of image */
+            width: 38px; /* Width of image */
+            background: url("img/top.png") no-repeat;
+        }
+
+        #scrollUp {
+            bottom: -10px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            padding: 10px 5px;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
             text-decoration: none;
-            cursor: default;
+            text-shadow: 0 1px 0 #fff;
+            color: #828282;
+            -webkit-box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
+            background-color: #E6E6E6;
+            background-image: -moz-linear-gradient(top, #EBEBEB, #DEDEDE);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EBEBEB), to(#DEDEDE));
+            background-image: -webkit-linear-gradient(top, #EBEBEB, #DEDEDE);
+            background-image: -o-linear-gradient(top, #EBEBEB, #DEDEDE);
+            background-image: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
+            background-repeat: repeat-x;
+            -webkit-transition: bottom 150ms linear;
+            -moz-transition: bottom 150ms linear;
+            transition: bottom 150ms linear;
         }
 
-        dt {
-            margin-top: 20px;
+            #scrollUp:hover {
+                bottom: 0px;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 70px;
+            border-top: 1px solid #e5e5e5;
+            background-color: #f5f5f5;
         }
 
-        dd {
-            color: #808080;
-        }
+            .footer p {
+                margin-bottom: 0;
+                color: #777;
+            }
     </style>
 
-
-
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
 </head>
 
 <body>
 
     <div class="container">
-
         <div class="masthead">
-            <h3 class="muted">zyxstar's profile</h3>
-            <div class="navbar ">
+            <a name="top"></a>
+            <h1 class="muted">ZYXSTAR'S PROFILE</h1>
+            <div class="navbar">
                 <div class="navbar-inner">
                     <div class="container">
                         <ul id="myNav" class="nav">
                             <li class="active"><a href="#language">编程语言</a></li>
                             <li><a href="#knowledge">编程技能</a></li>
                             <li><a href="#demo">Demo</a></li>
-                            <li><a href="#certificate">软考证书</a></li>
                             <li><a href="#profile">关于本人</a></li>
                             <li><a href="#contact">联系方式</a></li>
                         </ul>
@@ -65,19 +122,21 @@
 
 
         <div class="row">
+
+
             <div class="span12">
                 <a name="language"></a>
                 <h2 class="top">
-                    <a href="#" data-toggle="tooltip" title="" data-original-title="工作中主要工作语言">编程语言</a></h2>
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="工作中主要使用过的语言">编程语言</a></h2>
 
 
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <td style="width: 15%">语言</td>
-                            <td style="width: 25%">框架/库</td>
-                            <td style="width: 15%">熟练程度</td>
-                            <td style="width: 45%">说明</td>
+                            <th style="width: 15%">语言</th>
+                            <th style="width: 25%">框架/库</th>
+                            <th style="width: 15%">熟练程度</th>
+                            <th style="width: 45%">说明</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -137,7 +196,7 @@
 
                 <ul id="myTab" class="nav nav-tabs">
                     <li class="active">
-                        <a href="#tab1">面向对象</a>
+                        <a class="" href="#tab1">面向对象</a>
                     </li>
                     <li><a href="#tab2">单元测试</a></li>
                     <li><a href="#tab3">数据库</a></li>
@@ -150,32 +209,45 @@
 
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
+                        <p>对OOD、OOP有所了解，认为类的设计是CRC（类—职责—协作）识别的过程，基于职责进行OO化，表示面向对象事物时，不能只看到物理的对象，而是物理对象具有的逻辑职责，所以OO对象并不与物理对象一一对应，而是模仿物理对象具有的职责，而且很多时候建模的时候并不存在真正的物理对象，这时候基于职责来识别对象就更为重要；</p>
+                        <p>
+                            接触过设计模式，但认为Uncle Bob的
+                            <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a>：
+                            <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP</a>、
+                            <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Open/closed_principle">OCP</a>、
+                            <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Liskov_substitution_principle">LSP</a>、
+                            <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Interface_segregation_principle">ISP</a>、
+                            <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Dependency_inversion_principle">DIP</a>
+                            等更受用，他后来提出的<a class="external" target="_blank" href="http://book.douban.com/subject/5442024/">Clean Code</a>对我影响也很大；
+                        </p>
 
-                        <p>对OOD、OOP有所了解，认为类的设计是CRC识别的过程；</p>
-                        <p>接触过设计模式，但认为Uncle Bob的OCP、DIP、LSP、SRP、ISP等更受用；</p>
-                        <p>喜欢POJO、POCO的编程风格，倾向从问题域进行建模。</p>
+                        <p>喜欢POJO、POCO的编程风格，倾向从问题域进行建模 （<a class="external" target="_blank" href="http://www.cnblogs.com/zyxstar2003/archive/2011/03/14/1983216.html">从问题域建模的例子</a>）；</p>
+                        <p>能阅读与制作UML。</p>
                     </div>
                     <div class="tab-pane fade" id="tab2">
-                        <p>曾专门参加过<a target="_blank" href="http://weibo.com/u/1859409827">段念</a>的敏捷测试的培训，对单元测试（分离与感知）有较好的理解，写出的代码能否具有可测性很重要；</p>
+                        <p>
+                            曾专门参加过<a target="_blank" href="http://weibo.com/u/1859409827">@段念</a>的敏捷测试的培训，
+                            对单元测试（分离与感知）有较好的理解；
+                        </p>
                         <p>对C#、python下的xUnit框架及相应的mock框架有过实践；</p>
-                        <p>单元测试是持续集成必不可少的部分，但对测试驱动开发不甚了了。</p>
-
+                        <p>单元测试是持续集成必不可少的部分；</p>
+                        <p>写出的代码能否具有可测性很重要，但对测试驱动开发不甚了了。</p>
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <p>对数据库建模有过接触，能较好掌握实体与关系模型（E-R图）；</p>
-                        <p>接触过Oralce PL/SQL。</p>
+                        <p>接触过Oralce PL/SQL；</p>
+                        <p>对Nosql感兴趣，但缺少实践。</p>
                     </div>
                     <div class="tab-pane fade" id="tab4">
                         <p>接触过Asp.net、Webpy、Rails等框架下的web编程；</p>
-                        <p>了解Http协议；</p>
+                        <p>了解Http协议，知道Restful与SOAP；</p>
                         <p>对html、css有所了解，熟悉常用框架；</p>
-                        <p>对restful编程风格与mvc框架也有所接触；</p>
                         <p>同时对regex、xml/xsd等知识也有过实践。</p>
                     </div>
                     <div class="tab-pane fade" id="tab5">
-                        <p>对项目开发流程有所实践，而常用工具如Bugfree、Svn/Git、CC.net/Ant对项目开发也很有裨益；</p>
-                        <p>对时间、成本、范围和质量的平衡有些感想，所以制作WBS，指定优先级，量化指标等是项目管理中可用的工具；</p>
-                        <p>但敏捷开发的思想让我意识到，人才是最重要的因素。</p>
+                        <p>对项目开发流程有所实践，实践过迭代开发，常用工具如Bugfree、Svn/Git、CC.net/Ant对项目开发也很有裨益；</p>
+                        <p>对时间、成本、范围和质量的平衡有些感想，所以制作WBS、指定优先级、量化指标、沟通反馈等是项目管理中可用的工具；</p>
+                        <p>对敏捷开发感兴趣，但没有太多实践。</p>
                     </div>
                 </div>
 
@@ -183,52 +255,101 @@
             <div class="span12">
                 <a name="demo"></a>
                 <h2 class="top">
-                    <a href="#" data-toggle="tooltip" title="" data-original-title="在GAE、SAE、Github上的小练手">Demo</a></h2>
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="在GAE、SAE上的小练手">Demo</a></h2>
 
                 <ul>
 
                     <li>
-                        <a target="_blank" href="http://zyx-star.appsp0t.com/app/chess.htm">象棋(GAE)</a>
+                        <a class="external" target="_blank" href="http://zyx-star.appsp0t.com/app/chess.htm">象棋(GAE 2012.02)</a>
                     </li>
                     <li>
-                        <a target="_blank" href="http://zyx-star.appsp0t.com/app/chessxhr.htm">象棋对弈(GAE)</a>
+                        <a class="external" target="_blank" href="http://zyx-star.appsp0t.com/app/chessxhr.htm">象棋对弈(GAE 2012.02)</a>
                     </li>
 
                     <li>
-                        <a target="_blank" href="https://github.com/zyxstar">小项目(Github)</a>
+                        <a class="external" target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">coffeescript(SAE 2013.05)</a>
                     </li>
-                    <li>
-                        <a target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">coffeescript(SAE)</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="http://www.cnblogs.com/zyxstar2003">技术博客</a>
-                    </li>
+
+
+
 
                 </ul>
             </div>
 
-            <div class="span12">
-
-                <a name="certificate"></a>
-                <h2 class="top">
-                    <a href="#" data-toggle="tooltip" title="" data-original-title="参加全国软考所取得的证书">软考证书</a></h2>
-
-
-                <ul>
-                    <li>数据库系统工程师(2006) <a target="_blank" href="http://www.ceiaec.org/zgks_xw4.htm">进入全国前50名</a></li>
-                    <li>系统分析师(2009)</li>
-                    <li>信息系统项目管理师(2012)</li>
-                </ul>
-            </div>
 
             <div class="span12">
 
                 <a name="profile"></a>
                 <h2 class="top">
-                    <a href="#" data-toggle="tooltip" title="" data-original-title="关于本人">关于本人</a></h2>
+                    <a href="#" data-toggle="tooltip" title="" data-original-title="有关本人的详细信息">关于本人</a></h2>
 
 
-                <p></p>
+
+                <div class="accordion" id="accordion1">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">基本信息
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">求学过程
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">工作经历
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">项目经验
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Anim pariatur cliche...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">软考证书
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>数据库系统工程师(2006) <a class="external" target="_blank" href="http://www.ceiaec.org/zgks_xw4.htm">进入全国前50名</a></li>
+                                    <li>系统分析师(2009)</li>
+                                    <li>信息系统项目管理师(2012)</li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
             <div class="span12">
@@ -237,28 +358,68 @@
                 <h2 class="top">
                     <a href="#" data-toggle="tooltip" title="" data-original-title="联系方式">联系方式</a></h2>
 
+                <ul>
+                    <li><a href="mailto:zyxstar2013@163.com">zyxstar2013@163.com</a></li>
+                    <li>
+                        <a target="_blank" href="https://github.com/zyxstar">Github</a>
+                    </li>
+                    <li>
+                        <a class="external" target="_blank" href="http://www.cnblogs.com/zyxstar2003">技术博客</a>
+                    </li>
 
-                <p>zyxstar2013#163.com</p>
+                </ul>
             </div>
+
         </div>
 
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p>制作于2013.06.08</p>
+      </div>
+    </footer>
+
+
+
+
+
     <script type="text/javascript">
-        $("a[data-toggle='tooltip']").each(function () {
-            $(this).tooltip();
+        var cur;
+        $(document).ready(function () {
+
+            $.scrollUp({
+                scrollName: 'scrollUp', // Element ID
+                topDistance: '300', // Distance from top before showing element (px)
+                topSpeed: 300, // Speed back to top (ms)
+                animation: 'fade', // Fade, slide, none
+                animationInSpeed: 200, // Animation in speed (ms)
+                animationOutSpeed: 200, // Animation out speed (ms)
+                scrollText: '回到顶端', // Text for element
+                activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+            });
+
+            $("a[data-toggle='tooltip']").each(function () {
+                $(this).tooltip();
+            });
+
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            cur = $('#myNav li:first');
+            $('#myNav a').click(function (e) {
+                cur.removeClass("active");
+                cur = $(this).parent("li");
+                cur.addClass("active");
+            })
         });
-        $('#myTab a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        });
-        var cur = $('#myNav li:first');
-        $('#myNav a').click(function (e) {
-            cur.removeClass("active");
-            cur = $(this).parent("li");
-            cur.addClass("active");
-        })
     </script>
 
 
 </body>
+
+
+
+
 </html>
