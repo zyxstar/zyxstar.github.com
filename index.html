@@ -4,9 +4,10 @@
     <title>zyxstar's Profile</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
     <style type="text/css">
         body {
         }
@@ -35,6 +36,34 @@
         a.external {
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=) center right no-repeat;
             padding-right: 13px;
+        }
+
+        @media (min-width: 1px) and (max-width: 590px) {
+            #btn-navbar {
+                display: block;
+                float: none;
+                width: 100%;
+                margin: 0;
+            }
+
+            .navbar-inner {
+                padding: 0;
+                min-height: 0;
+            }
+
+                .navbar-inner .nav {
+                    float: none;
+                    margin: 0;
+                    display: none;
+                }
+
+            .open .nav {
+                display: block;
+            }
+
+            .navbar .nav > li {
+                float: none;
+            }
         }
 
         #scrollUp0 {
@@ -104,6 +133,10 @@
             <h1 class="muted">ZYXSTAR'S PROFILE</h1>
             <div class="navbar">
                 <div class="navbar-inner">
+                    <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar collapsed"
+                        id="btn-navbar" type="button">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
                     <div class="container">
                         <ul id="myNav" class="nav">
                             <li class="active"><a href="#language">编程语言</a></li>
@@ -121,7 +154,7 @@
 
 
 
-        <div class="row">
+        <div class="row-fluid">
 
 
             <div class="span12">
@@ -166,11 +199,11 @@
                         <tr>
                             <td>Javascript    
                             </td>
-                            <td>coffeescript，jquery，knockout
+                            <td>coffeescript，jquery，knockout，underscorejs
                             </td>
                             <td>比较熟悉
                             </td>
-                            <td>基本了解语言机制，更喜欢coffeescript那种类ruby/python的风格，对knockout的MVVM也比较感兴趣
+                            <td>基本了解Javascript的语言机制，更喜欢coffeescript <a class="external" target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">demo(SAE)</a> 那种类ruby/python的风格，对knockout的MVVM也比较感兴趣，喜欢underscorejs处理集合的优雅
                             </td>
 
                         </tr>
@@ -207,9 +240,9 @@
 
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
-                        <p>对OOD、OOP有所了解，认为类的设计是CRC（类—职责—协作）识别的过程，基于职责进行OO化，表示面向对象事物时，不能只看到物理的对象，而是物理对象具有的逻辑职责，所以OO对象并不与物理对象一一对应，而是模仿物理对象具有的职责，而且很多时候建模的时候并不存在真正的物理对象，这时候基于职责来识别对象就更为重要；</p>
-                        <p>
-                            接触过设计模式，但认为Uncle Bob的
+                        <p>对OOD、OOP有所了解，认为类的设计是CRC（类—职责—协作）识别的过程；</p>
+                        <p>接触过设计模式，认为面向对象的重点在建模，设计模式的侧重在于解耦；</p>
+                        <p>相比设计模式，认为Uncle Bob的
                             <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a>：
                             <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP</a>、
                             <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Open/closed_principle">OCP</a>、
@@ -218,7 +251,6 @@
                             <a class="external" target="_blank" href="http://en.wikipedia.org/wiki/Dependency_inversion_principle">DIP</a>
                             等更受用，他后来提出的<a class="external" target="_blank" href="http://book.douban.com/subject/5442024/">Clean Code</a>对我影响也很大；
                         </p>
-
                         <p>喜欢POJO、POCO的编程风格，倾向从问题域进行建模 （<a class="external" target="_blank" href="http://www.cnblogs.com/zyxstar2003/archive/2011/03/14/1983216.html">从问题域建模的例子</a>）；</p>
                         <p>能阅读与制作UML。</p>
                     </div>
@@ -262,21 +294,12 @@
                     <a href="#" data-toggle="tooltip" title="" data-original-title="在GAE、SAE上的小练手">Demo</a></h2>
 
                 <ul>
-
                     <li>
                         <a class="external" target="_blank" href="http://zyx-star.appsp0t.com/app/chess.htm">象棋(GAE 2012.02)</a>
                     </li>
                     <li>
                         <a class="external" target="_blank" href="http://zyx-star.appsp0t.com/app/chessxhr.htm">象棋对弈(GAE 2012.02)</a>
                     </li>
-
-                    <li>
-                        <a class="external" target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">coffeescript(SAE 2013.05)</a>
-                    </li>
-
-
-
-
                 </ul>
             </div>
 
@@ -297,7 +320,7 @@
                         </div>
                         <div id="collapseOne" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Anim pariatur cliche...
+                                ...
                             </div>
                         </div>
                     </div>
@@ -308,7 +331,7 @@
                         </div>
                         <div id="collapseTwo" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Anim pariatur cliche...
+                                ...
                             </div>
                         </div>
                     </div>
@@ -319,7 +342,7 @@
                         </div>
                         <div id="collapseThree" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Anim pariatur cliche...
+                                ...
                             </div>
                         </div>
                     </div>
@@ -330,7 +353,7 @@
                         </div>
                         <div id="collapseFour" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                Anim pariatur cliche...
+                                ...
                             </div>
                         </div>
                     </div>
@@ -339,7 +362,7 @@
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">软考证书
                             </a>
                         </div>
-                        <div id="collapseFive" class="accordion-body collapse">
+                        <div id="collapseFive" class="accordion-body collapse in">
                             <div class="accordion-inner">
                                 <ul>
                                     <li>数据库系统工程师(2006) <a class="external" target="_blank" href="http://www.ceiaec.org/zgks_xw4.htm">进入全国前50名</a></li>
@@ -362,13 +385,14 @@
                 <h2 class="top">
                     <a href="#" data-toggle="tooltip" title="" data-original-title="联系方式">联系方式</a></h2>
 
-                <ul>
-                    <li><a href="mailto:zyxstar2013@163.com">zyxstar2013@163.com</a></li>
-                    <li>
+                <ul style="list-style-type:none;">
+                    <li><i class="icon-envelope"></i>
+                        <a href="mailto:zyxstar2013@163.com">zyxstar2013@163.com</a></li>
+                    <li><i class="icon-" style="background: url(img/git.jpg)"></i>
                         <a target="_blank" href="https://github.com/zyxstar">Github</a>
                     </li>
-                    <li>
-                        <a class="external" target="_blank" href="http://www.cnblogs.com/zyxstar2003">技术博客</a>
+                    <li><i class="icon-pencil"></i>
+                        <a target="_blank" href="http://www.cnblogs.com/zyxstar2003">技术博客</a>
                     </li>
 
                 </ul>
@@ -379,7 +403,7 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <p>制作于2013.06.08</p>
+        <p>使用<a target="_blank" href="http://twitter.github.io/bootstrap/">Bootstrap</a> 制作 2013.06.08</p>
       </div>
     </footer>
 
@@ -417,6 +441,21 @@
                 cur = $(this).parent("li");
                 cur.addClass("active");
             })
+
+            var btnNavbar = $('#btn-navbar');
+            btnNavbar.click(function () {
+                var el = $(this);
+                var p = el.parent();
+
+                var nav = $('#myNav');
+                if (p.hasClass('open')) {
+                    p.removeClass('open');
+
+                } else {
+                    p.addClass('open');
+                }
+            });
+
         });
     </script>
 
