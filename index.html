@@ -25,7 +25,9 @@
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=) center right no-repeat;
             padding-right: 13px;
         }
-
+        li li{
+            margin-top: 10px;
+        }
         @media (min-width: 1px) and (max-width: 590px) {
             #btn-navbar {
                 display: block;
@@ -180,9 +182,9 @@
                             </td>
                             <td>.Net Framework，Linq
                             </td>
-                            <td>比较熟悉
+                            <td>熟悉
                             </td>
-                            <td>接触时间比较长，基本了解语言机制，对范型、委托、事件、反射也有所接触
+                            <td>接触时间比较长，基本了解语言机制，对范型、委托、事件、迭代、反射也有所接触
                             </td>
 
                         </tr>
@@ -191,7 +193,7 @@
                             </td>
                             <td>Standard Library，webpy，moko，beaker，django
                             </td>
-                            <td>比较熟悉
+                            <td>熟悉
                             </td>
                             <td>基本了解语言机制，喜欢它的灵活，喜欢列表解析与生成器，常用它来编写一些工具：构建自动化测试、代码生成器、系统监控……
                             </td>
@@ -201,11 +203,11 @@
                         <tr>
                             <td>Javascript
                             </td>
-                            <td>coffeescript，jquery，knockout，backbone，underscorejs
+                            <td>jquery，backbone，knockout，underscorejs，coffeescript
                             </td>
-                            <td>比较熟悉
+                            <td>熟悉
                             </td>
-                            <td>基本了解Javascript的语言机制，更喜欢coffeescript <a class="external" target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">demo(SAE)</a> 那种类ruby/python的风格，对backbone/knockout的MVC/MVVM也比较感兴趣 ，喜欢underscorejs处理集合的优雅
+                            <td>了解Javascript的语言机制(ES5还在研究中)，更喜欢coffeescript <a class="external" target="_blank" href="http://zyxstar.sinaapp.com/static/loyaltyupd-coffee.html">demo(SAE)</a> 那种类ruby/python的风格，对backbone/knockout的MVC/MVVM也比较感兴趣 ，喜欢underscorejs处理集合的优雅
                             </td>
 
                         </tr>
@@ -215,9 +217,9 @@
                             </td>
                             <td>rails
                             </td>
-                            <td>一般熟悉
+                            <td>一般
                             </td>
-                            <td>目前对它语言方面还有许多学习的地方，喜欢monkey patch，喜欢DSL，着迷于rails框架和丰富的插件
+                            <td>目前对它语言方面还有不少需要深入了解的地方，喜欢monkey patch，喜欢DSL，着迷于rails框架和丰富的插件
                             </td>
 
                         </tr>
@@ -258,7 +260,7 @@
                         </p>
                         <p>对C#、python下的xUnit框架及相应的mock框架有过实践；</p>
                         <p>单元测试是持续集成必不可少的部分；</p>
-                        <p>写出的代码能否具有可测性很重要，但对测试驱动开发不甚了了。</p>
+                        <p>写出的代码能否具有可测性很重要，但对测试驱动开发(TDD)不甚了了。</p>
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <p>对数据库建模有过接触，能较好掌握实体与关系模型（E-R图）；</p>
@@ -278,7 +280,7 @@
                     </div>
                     <div class="tab-pane fade" id="tab6">
                         <p>感兴趣（但目前了解不多）的：</p>
-                        <p>C/C++、Linux</p>
+                        <p>C/C++、Linux、Android</p>
                         <p>程序语言机制、函数式编程（Haskell Erlang F#）</p>
                         <p>思维与元知识</p>
                     </div>
@@ -346,8 +348,8 @@
                         <div id="collapseThree" class="accordion-body collapse">
                             <div class="accordion-inner">
                                  <ul>
-                                    <li>2002~2004，南通四建北京项目管理公司的信息管理员</li>
-                                    <li>2007~至今，自达康科技与中间带</li>
+                                    <li>2002~2004，在南通四建北京项目管理公司任职信息管理员，参与了该公司的部分信息管理系统的开发</li>
+                                    <li>2007~至今，在<a target='_blank' href="http://www.selfdoctor.com.cn">自达康科技</a>与<a target='_blank' href="http://www.medilink-global.com.cn/">中间带技术</a>任职，两家公司之前为同一个技术团队，后各自成立了一支团队。本人先后任职于程序员、自达康的研发部经理、自达康的技术总监，目前全面负责自达康全线产品的架构与设计</li>
                                 </ul>
                             </div>
                         </div>
@@ -359,7 +361,33 @@
                         </div>
                         <div id="collapseFour" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                ...
+                                  <ul>
+                                    <li><h4>电子医疗理赔系统Eccs</h4>
+通过支持电子医疗卡网络为保险公司、企业和第三方管理机构提供医疗理赔以及医疗数据的管理服务。Eccs是一套高度定制的适用于医疗理赔处理和医疗数据管理的应用系统，能够实现直接付费和事后理赔，并且支持跨境医疗的服务。目前主要客户有平安、人保健康、中意人寿、中英人寿、AIA、AXA等。该系统采用C#及Pl/sql等相关技术，本人在中间带就职时，主要参与了本系统的V8版本的开发。
+
+                                    </li>
+                                     <li><h4>忠诚度系统Loyalty</h4>
+一套完整交易系统，为提供商户提供客户的行为分析，能为商家灵活制定各种促销策略，旨在提高客户的忠诚度，目前使用该系统的公司有瑞尔齿科、世华集团等。本系统主要使用.net framework开发，本人主要设计与开发了本系统的V2版本。
+
+                                    </li>
+                                    <li>
+                                        <h4>健康管理系统</h4>
+<ul>
+    该系统包括以下下述相对独立的子系统，部分应用参与了科技部的“十一五”、“十二五”国家技术支撑计划的相关课题，部分功能模块支持着移动的手机“健康管家”、中意的“HCP健康平台”、联通与IBM的健康云等业务：
+    <li>
+        <strong>在线健康自测</strong>：根据用户选择的信息，利用疾病预警模型来确定用户可能患有的疾病和几率，并对此给出 评估和改善建议，目前可针对400多种常见疾病进行评估。主要使用.net framework开发。
+    </li>
+    <li>
+        <strong>健康档案</strong>：记录的各种健康数据，如手术史、既往病史、免疫史、化验检查等，对可量化的健康数据提供图形化的、更直观的趋势分析。参考国家健康档案的标准和HL7标准进行建模与开发。
+    </li>
+    <li>
+        <strong>运动监测仪</strong>：属于目前比较流行的可穿戴设备的应用开发，设备可以全日监测步行数、步行距离、能量消耗等日常运动相关数据，通过GPRS上传到服务器，后端分析用户行为，再由运动专家给用户提供健康指导。目前能与多个运动社区进行数据对接（咕咚网、启动网、联通与IBM的健康云）。在架构设计方面采用了Restful风格，并将数据采集与数据应用分开建模与设计，能应对数据的获取渠道异构化，数据应用多样化的场景。在语言方面也采用了混合编程模式，如数据采集与对接采用python，运动社区采用Rails
+    </li>
+</ul>
+                                    </li>
+
+                                    <li><h4>具有项目管理经验，熟知研发流程，能独立带领团队工作</h4></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
